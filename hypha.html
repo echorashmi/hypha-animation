@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+    <link href="css/hypha.css?v=1" rel="stylesheet" />
+    <link href="css/animate.css?v=1" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/particles.js"></script>
+</head>
+
+<body class="impress-not-supported">
+    
+    <audio id="audiotag" preload="auto">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+    
+    
+    <div class="overlay">
+        &nbsp;
+    </div>
+    
+    <div id="particlesjs" class="particles">
+    
+    </div>
+    
+    <div class="blacklayer">
+        <button id="startdemo" style="margin:10px; margin-top:10px;">Play</button>
+    </div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    
+    <!-- 1 -->
+    <div class="step slide" data-x="0" data-y="0">
+        <div class="child">
+            <img src="css/logo/HyphaWhiteY.png" height="200" />
+            <p class="font1">the shroom guys</p>
+        </div>
+    </div>
+    
+    <!-- 2 -->
+    <div class="step slide" data-x="1000" data-y="0">
+        <div class="child">
+            <p>who are we?</p>
+            <p class="font1">myco magicians</p>
+        </div>
+    </div>
+    
+    <!-- 3 -->
+    <div class="step slide" data-x="0" data-y="2000">
+        <div class="child">
+            <p class="font1">How did we get here?</p>
+            <p>Our Story</p>
+        </div>
+    </div>
+    
+    <!-- 4 -->
+    <div class="step slide" data-x="0" data-y="3000">
+        <div class="child">
+            Visual Graphic
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="step slide" data-x="0" data-y="4000">
+        <div class="child">
+            Darkness
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="step slide" data-x="0" data-y="5000">
+        <div class="child">
+            We began our journey like most newbies, passionate, optimistic &amp; excited...
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="step slide" data-x="0" data-y="6000">
+        <div class="child">
+            ...but we soon ran into an oversaturation of unclear, sometimes contradictory information online, as well as an abundance of negative customer experiences to say the least, our early learning process felt like we were stumbling around in the dark anxiously searching for a light switch fast forward a few years, after plenty of trial and error we have decided to become the light switch for you...
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="step slide" data-x="0" data-y="10000">
+        <div class="child">
+            ...and this is where hypha was born
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="step slide" data-x="0" data-y="11000">
+        <div class="child">
+            Innovative New Technology
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="step slide" data-x="0" data-y="12000">
+        <div class="child">
+            Step by Step Educational Videos
+        </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="step slide" data-x="0" data-y="13000">
+        <div class="child">
+            Collaborative Platform
+        </div>
+    </div>
+
+    <!-- 12 -->
+    <div class="step slide" data-x="0" data-y="14000">
+        <div class="child">
+            Consultation
+        </div>
+    </div>
+
+    <!-- 13 -->
+    <div class="step slide" data-x="0" data-y="15000">
+        <div class="child">
+            Fun Interactive Content
+        </div>
+    </div>
+
+    <!-- 14 -->
+    <div class="step slide" data-x="0" data-y="16000">
+        <div class="child">
+            Fade to Black
+        </div>
+    </div>
+
+    <!-- 15 -->
+    <div class="step slide" data-x="0" data-y="17000">
+        <div class="child">
+            Mycology will never be the same
+        </div>
+    </div>
+
+    <!-- 16 -->
+    <div class="step slide" data-x="0" data-y="18000">
+        <div class="child">
+            Know More
+            <p></p>
+        </div>
+    </div>
+
+    <!-- 17 -->
+    <div class="step slide" data-x="0" data-y="19000">
+        <div class="child">
+            ~ Le Fin ~
+        </div>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0"  >
+    </div>
+
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+
+particlesJS.load('particlesjs', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+/*
+//Slide 0: Black Layer:
+setTimeout(function(){
+},3000);
+*/
+
+/*
+$(document).on('click', '#audioplay', function(){
+    alert('here');
+    //
+    //
+});
+*/
+
+$('#startdemo').click(function(){
+    $('#audiotag').get(0).play();
+    impress().init();
+});
+
+setInterval(function(){
+    var player = document.getElementById('audiotag');
+    var current_time = player.currentTime;
+    var currentTime = calculateCurrentValue(current_time);
+    $('.time').html(currentTime);
+    
+    switch(currentTime)
+    {
+        case '00:01': 
+        {
+            $('.blacklayer').fadeOut('slow');
+        }
+        break;
+        case '00:07': //1
+        {
+            impress().next();
+        }
+        break;
+        case '00:13': //2
+        {
+            impress().next();
+        }
+        break;
+        case '00:17': //3
+        {
+            impress().next();
+        }
+        break;
+        case '00:22': //4
+        {
+            impress().next();
+        }
+        break;
+        case '00:24': //5
+        {
+            impress().next();
+        }
+        break;
+        case '00:25': //6
+        {
+            impress().next();
+        }
+        break;
+        case '00:57': //7
+        {
+            impress().next();
+        }
+        break;
+        case '01:05': //8
+        {
+            impress().next();
+        }
+        break;
+        case '01:08': //9
+        {
+            impress().next();
+        }
+        break;
+        case '01:11': //10
+        {
+            impress().next();
+        }
+        break;
+        case '01:14': //11
+        {
+            impress().next();
+        }
+        break;
+        case '01:17': //12
+        {
+            impress().next();
+        }
+        break;
+        case '01:20': //13
+        {
+            impress().next();
+        }
+        break;
+        case '01:23': //14
+        {
+            impress().next();
+        }
+        break;
+        case '01:26': //15
+        {
+            impress().next();
+        }
+        break;
+        case '01:29': //16
+        {
+            impress().next();
+        }
+        break;
+    }
+    
+    
+}, 1000);
+
+function calculateCurrentValue(currentTime) {
+  var current_hour = parseInt(currentTime / 3600) % 24,
+    current_minute = parseInt(currentTime / 60) % 60,
+    current_seconds_long = currentTime % 60,
+    current_seconds = current_seconds_long.toFixed(),
+    current_time = (current_minute < 10 ? "0" + current_minute : current_minute) + ":" + (current_seconds < 10 ? "0" + current_seconds : current_seconds);
+
+  return current_time;
+}
+
+
+</script>
+
+
+<script src="js/impress.js"></script>
+<script>/* */</script>
+<style>
+.time{
+    display: block;
+    margin:10px;
+    position: absolute;
+    bottom:0px;
+    left:200px;
+}
+</style>
+</body>
+</html>
