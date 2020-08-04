@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 impress.js
 ============
 
@@ -124,3 +125,7 @@ Copyright 2011-2016 Bartek Szopka
 Copyright 2015-2017 Henrik Ingo
 
 Released under the MIT [License](LICENSE)
+=======
+# hypha-animation
+Some fun animations!
+>>>>>>> 04437fe5ede1717ff32af5195f3fb0ea65b774c8
